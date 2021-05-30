@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.wishlist.api</name>
+    </assembly>
+    <members>
+        <member name="M:senai.wishlist.api.Interface.IDesejoRepository.Cadastrar(senai.wishlist.api.Domains.Desejo)">
+            <summary>
+            Cadastra um novo desejo
+            </summary>
+            <param name="novoDesejo">Credenciais desse novo desejo</param>
+        </member>
+        <member name="M:senai.wishlist.api.Interface.IDesejoRepository.ListarTudo">
+            <summary>
+            Lista todos os desejos 
+            </summary>
+            <returns>Uma lista de desejos</returns>
+        </member>
+        <member name="M:senai.wishlist.api.Interface.IUsuarioRepository.Cadastrar(senai.wishlist.api.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Credenciais do novo usuário</param>
+        </member>
+        <member name="M:senai.wishlist.api.Interface.IUsuarioRepository.ListarTudo">
+            <summary>
+            Lista os usuários
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="F:senai.wishlist.api.Repositories.DesejoRepository.ctx">
+            <summary>
+            Faz um objeto do tipo WLContext chamado 'ctx', atribuindo-o a um novo objeto WLContext
+            </summary>
+        </member>
+        <member name="M:senai.wishlist.api.Repositories.DesejoRepository.Cadastrar(senai.wishlist.api.Domains.Desejo)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoDesejo">Credenciais desse novo desejo cadastrado</param>
+        </member>
+        <member name="M:senai.wishlist.api.Repositories.DesejoRepository.ListarTudo">
+            <summary>
+            Lista todos os desejos
+            </summary>
+            <returns>Lista de desejos</returns>
+        </member>
+        <member name="F:senai.wishlist.api.Repositories.UsuarioRepository.ctx">
+            <summary>
+            Cria um objeto do tipo WLContext chamado 'ctx', atribuindo-o a um novo objeto WLContext
+            </summary>
+        </member>
+        <member name="M:senai.wishlist.api.Repositories.UsuarioRepository.Cadastrar(senai.wishlist.api.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Credenciais do novo usuário cadastrado</param>
+        </member>
+        <member name="M:senai.wishlist.api.Repositories.UsuarioRepository.ListarTudo">
+            <summary>
+            Lista de todos os usuários
+            </summary>
+            <returns>Lista de usuários</returns>
+        </member>
+    </members>
+</doc>

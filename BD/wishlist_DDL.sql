@@ -1,0 +1,23 @@
+CREATE DATABASE WishList											--CRIA O BANCO DE DADOS 'WishList'
+GO																	--SEPARA O SCRIPT EM BLOCOS
+
+USE WishList														--SELECIONA E ENTRA NO BANCO DE DADOS 'WishList'
+GO																	--SEPARA O SCRIPT EM BLOCOS
+
+CREATE TABLE Usuarios												--CRIA A TABELA 'Usuarios'
+(
+	 idUsuario		INT PRIMARY KEY IDENTITY						--ID ÚNICO E AUTOMÁTICO DA ENTIDADE 'Usuarios'
+	,email			VARCHAR(250) NOT NULL UNIQUE					--EMAIL ÚNICO DO USUÁRIO, NÃO PERMITE NULOS
+    ,senha			VARCHAR(150) NOT NULL							--SENHA DO ÚSUARIO, NÃO PERMITE NULOS
+)
+
+GO																	--SEPARA O SCRIPT EM BLOCOS
+CREATE TABLE Desejos												--CRA A TABELA 'Desejos'
+(
+	idDesejo		INT PRIMARY KEY IDENTITY						--ID ÚNICO E AUTOMÁTICO DA ENTIDADE 'Desejos'
+	,idUsuario		INT FOREIGN KEY REFERENCES Usuarios(idUsuario)	--CHAVE ESTRANGEIRA DA ENTIDADE 'Desejos'. REFERENCIA O ID DA ENTIDADE 'Usuarios'
+	,descricao		VARCHAR(500) NOT NULL							--DESCRIÇÃO DA ENTIDADE 'Desejos'
+)
+
+GO																	--SEPARA O SCRIPT EM BLOCOS
+
