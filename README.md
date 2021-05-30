@@ -5,6 +5,4 @@ tecnologias aprendidas desde o início do semestre. Essa WishList tem como funci
 o cadastro e a listagem de desejos a partir do email de usuários.
 
 Tecnologias utilizadas:
-SQL Server
-C#
-ReactJS
+SQL Server; C#; ReactJS
