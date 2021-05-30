@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+
+.header1{
+    box-shadow: 2px 2px #C2C2C2;
+}
+
+.ht{
+    padding-left: 20px;
+    padding-bottom: 15px;
+    color: #5984C5;
+    font-size: 35px;
+    font-family: 'Limelight';
+    letter-spacing: 15px;
+}
+
+.in1{
+    height: 15px;
+    width: 15px;
+    font-family: 'Limelight';
+    opacity: 0.75;
+    position: relative;
+    bottom: 42px;
+    left: 5px;
+    border: 1px solid #5984C5;
+    box-shadow: 1px 1px #C2C2C2;
+}
+
+.in2{
+    font-family: 'Limelight';
+    height: 100px;
+    width: 275px;
+    position: relative;
+    left: 10px;
+    text-align: start;
+    border: 1px solid #5984C5;
+    box-shadow: 2px 2px #C2C2C2;
+}
+
+.btn1{
+    background-color: #5984C5;
+    color: white;
+    font-family: 'Limelight';
+    position: relative;
+    left: 19px;
+    bottom: 40px;
+    border: 1px solid #5984C5;
+    box-shadow: 2px 2px #C2C2C2;
+}
+
+.btn2{
+    background-color: #5984C5;
+    color: white;
+    font-family: 'Limelight';
+    position: relative;
+    left: 322px;
+    bottom: 77px;
+    border: 1px solid #5984C5;
+    box-shadow: 2px 2px #C2C2C2;
+}
+
+.s2{
+    position :relative;
+    top: 25px;
+    left: 25px;
+}
+
+.tt{
+    background-color: white;
+    color: white;
+    font-family: 'Limelight';
+    height: 500px;
+    width: 750px;
+}
+
+.tb{
+    font-size: 14px;
+    height: 100px;
+}
+
+.tr1{
+    background-color: #5984C5;
+}
+
+.tr2{
+    background-color: #5984C5;
+}
+
+
+
+
