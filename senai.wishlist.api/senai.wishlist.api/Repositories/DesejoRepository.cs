@@ -26,6 +26,18 @@ namespace senai.wishlist.api.Repositories
         }
 
         /// <summary>
+        /// Deletar um desejo
+        /// </summary>
+        /// <param name="id">id do desjo deletado</param>
+        public void Deletar(int id)
+        {
+            Desejo desejoBucado = ctx.Desejos.Find(id);
+
+            ctx.Desejos.Remove(desejoBucado);
+            ctx.SaveChanges();
+        }
+
+        /// <summary>
         /// Lista todos os desejos
         /// </summary>
         /// <returns>Lista de desejos</returns>

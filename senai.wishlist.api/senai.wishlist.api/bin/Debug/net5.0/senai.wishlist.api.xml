@@ -4,6 +4,26 @@
         <name>senai.wishlist.api</name>
     </assembly>
     <members>
+        <member name="M:senai.wishlist.api.Controllers.DesejoController.Get">
+            <summary>
+            Listar todos os desejos
+            </summary>
+            <returns>Uma lista de desejos</returns>
+        </member>
+        <member name="M:senai.wishlist.api.Controllers.DesejoController.Post(senai.wishlist.api.Domains.Desejo)">
+            <summary>
+            Cadastra um novo Desejo
+            </summary>
+            <param name="novoDesejo">Credenciais desse novo desejo</param>
+            <returns>Status Code 201 - Created</returns>
+        </member>
+        <member name="M:senai.wishlist.api.Controllers.DesejoController.Delete(System.Int32)">
+            <summary>
+            Deletar um desejo
+            </summary>
+            <param name="id">Id do desejo que será deletado</param>
+            <returns>Um status code 204 - NoContent</returns>
+        </member>
         <member name="M:senai.wishlist.api.Interface.IDesejoRepository.Cadastrar(senai.wishlist.api.Domains.Desejo)">
             <summary>
             Cadastra um novo desejo
@@ -15,6 +35,12 @@
             Lista todos os desejos 
             </summary>
             <returns>Uma lista de desejos</returns>
+        </member>
+        <member name="M:senai.wishlist.api.Interface.IDesejoRepository.Deletar(System.Int32)">
+            <summary>
+            Deletar um desejo
+            </summary>
+            <param name="id">Id do desejo que será buscada</param>
         </member>
         <member name="M:senai.wishlist.api.Interface.IUsuarioRepository.Cadastrar(senai.wishlist.api.Domains.Usuario)">
             <summary>
@@ -38,6 +64,12 @@
             Cadastra um novo usuário
             </summary>
             <param name="novoDesejo">Credenciais desse novo desejo cadastrado</param>
+        </member>
+        <member name="M:senai.wishlist.api.Repositories.DesejoRepository.Deletar(System.Int32)">
+            <summary>
+            Deletar um desejo
+            </summary>
+            <param name="id">id do desjo deletado</param>
         </member>
         <member name="M:senai.wishlist.api.Repositories.DesejoRepository.ListarTudo">
             <summary>

@@ -18,5 +18,10 @@ namespace senai.wishlist.api.Interface
         /// </summary>
         /// <returns>Uma lista de desejos</returns>
         List<Desejo> ListarTudo();
+        /// <summary>
+        /// Deletar um desejo
+        /// </summary>
+        /// <param name="id">Id do desejo que será buscada</param>
+        void Deletar(int id);
     }
 }
